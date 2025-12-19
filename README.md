@@ -1,4 +1,4 @@
-# 📱 PRÁCTICA EVALUABLE 4  
+# 📱 Spotify Numelody 
 ## Aplicaciones web en dispositivos móviles
 
 ## 🎼 Nombre de la aplicación  
@@ -6,7 +6,7 @@ Numelody
 
 
 ## 📌 Descripción General
-Numelody es una aplicación web con apariencia de aplicación móvil desarrollada con Ionic + Vue 3 y TypeScript.  
+Numelody es una aplicación web de canciones como spotify con apariencia de aplicación móvil desarrollada con Ionic + Vue 3 y TypeScript.  
 Utiliza PocketBase como backend para autenticación y gestión de datos.  
 La aplicación se despliega como Progressive Web App (PWA).
 
