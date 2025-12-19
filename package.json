@@ -20,8 +20,13 @@
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
     "ionicons": "^7.0.0",
+    "jspdf": "^3.0.4",
+    "jspdf-autotable": "^5.0.2",
+    "pinia": "^3.0.4",
+    "pocketbase": "^0.26.5",
     "vue": "^3.3.0",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@capacitor/cli": "8.0.0",
@@ -36,6 +41,7 @@
     "terser": "^5.4.0",
     "typescript": "~5.9.0",
     "vite": "^5.0.0",
+    "vite-plugin-pwa": "^1.2.0",
     "vitest": "^0.34.6",
     "vue-tsc": "^2.1.10"
   },

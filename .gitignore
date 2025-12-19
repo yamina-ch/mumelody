@@ -30,3 +30,7 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+node_modules/
+dist/
+.env
+.DS_Store

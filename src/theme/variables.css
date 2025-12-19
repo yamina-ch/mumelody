@@ -1,2 +1,232 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+/* Ionic Variables and Theming. */
+/* For more info, please see: */
+/* https://ionicframework.com/docs/theming/basics */
+
+/** Numelody Custom Theme - Dark Mode with Golden Accent **/
+:root {
+  /** primary (brand color - amarillo dorado) **/
+  --ion-color-primary: #f1c40f;
+  --ion-color-primary-rgb: 241, 196, 15;
+  --ion-color-primary-contrast: #1a1a1d;
+  --ion-color-primary-contrast-rgb: 26, 26, 29;
+  --ion-color-primary-shade: #d4ac0d;
+  --ion-color-primary-tint: #f2c926;
+
+  /** secondary **/
+  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary-rgb: 61, 194, 255;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #36abe0;
+  --ion-color-secondary-tint: #50c8ff;
+
+  /** tertiary **/
+  --ion-color-tertiary: #5260ff;
+  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #4854e0;
+  --ion-color-tertiary-tint: #6370ff;
+
+  /** success **/
+  --ion-color-success: #2dd36f;
+  --ion-color-success-rgb: 45, 211, 111;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #28ba62;
+  --ion-color-success-tint: #42d77d;
+
+  /** warning (usado como accent - amarillo dorado) **/
+  --ion-color-warning: #f1c40f;
+  --ion-color-warning-rgb: 241, 196, 15;
+  --ion-color-warning-contrast: #1a1a1d;
+  --ion-color-warning-contrast-rgb: 26, 26, 29;
+  --ion-color-warning-shade: #d4ac0d;
+  --ion-color-warning-tint: #f2c926;
+
+  /** danger **/
+  --ion-color-danger: #eb445a;
+  --ion-color-danger-rgb: 235, 68, 90;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #cf3c4f;
+  --ion-color-danger-tint: #ed576b;
+
+  /** dark **/
+  --ion-color-dark: #1a1a1d;
+  --ion-color-dark-rgb: 26, 26, 29;
+  --ion-color-dark-contrast: #f5f5f7;
+  --ion-color-dark-contrast-rgb: 245, 245, 247;
+  --ion-color-dark-shade: #17171a;
+  --ion-color-dark-tint: #313134;
+
+  /** medium **/
+  --ion-color-medium: #92949c;
+  --ion-color-medium-rgb: 146, 148, 156;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #808289;
+  --ion-color-medium-tint: #9d9fa6;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+}
+
+/** Dark Mode Theme - Numelody Style **/
+@media (prefers-color-scheme: dark) {
+  :root {
+    /** Background Colors **/
+    --ion-background-color: #0f0f10;
+    --ion-background-color-rgb: 15, 15, 16;
+
+    --ion-text-color: #f5f5f7;
+    --ion-text-color-rgb: 245, 245, 247;
+
+    --ion-color-step-50: #1a1a1d;
+    --ion-color-step-100: #1e1e21;
+    --ion-color-step-150: #222225;
+    --ion-color-step-200: #262629;
+    --ion-color-step-250: #2a2a2d;
+    --ion-color-step-300: #2e2e31;
+    --ion-color-step-350: #323235;
+    --ion-color-step-400: #363639;
+    --ion-color-step-450: #3a3a3d;
+    --ion-color-step-500: #3e3e41;
+    --ion-color-step-550: #424245;
+    --ion-color-step-600: #464649;
+    --ion-color-step-650: #4a4a4d;
+    --ion-color-step-700: #4e4e51;
+    --ion-color-step-750: #525255;
+    --ion-color-step-800: #565659;
+    --ion-color-step-850: #5a5a5d;
+    --ion-color-step-900: #5e5e61;
+    --ion-color-step-950: #626265;
+
+    /** Card Background **/
+    --ion-card-background: #1b1b1f;
+
+    /** Toolbar Background **/
+    --ion-toolbar-background: #0f0f10;
+
+    /** Item Background **/
+    --ion-item-background: #1a1a1d;
+
+    /** Border Color **/
+    --ion-border-color: #2a2a2d;
+  }
+}
+
+/** Custom Numelody Styles **/
+ion-content {
+  --background: var(--ion-background-color);
+}
+
+ion-card {
+  --background: var(--ion-card-background);
+  border: 1px solid var(--ion-border-color);
+}
+
+ion-item {
+  --background: var(--ion-item-background);
+  --border-color: var(--ion-border-color);
+}
+
+ion-toolbar {
+  --background: var(--ion-toolbar-background);
+  --border-color: var(--ion-border-color);
+}
+
+/** Smooth scrolling **/
+ion-content {
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/** Custom Searchbar Styling **/
+ion-searchbar {
+  --background: rgba(26, 26, 29, 0.8);
+  --border-radius: 12px;
+  --color: var(--ion-text-color);
+  --placeholder-color: #92949c;
+  --icon-color: var(--ion-color-warning);
+}
+
+/** Slides Styling **/
+ion-slides {
+  --bullet-background: rgba(255, 255, 255, 0.3);
+  --bullet-background-active: var(--ion-color-warning);
+}
+
+/** Range (Progress Bar) Styling **/
+ion-range {
+  --bar-background: rgba(146, 148, 156, 0.3);
+  --bar-background-active: var(--ion-color-warning);
+  --knob-background: var(--ion-color-warning);
+  --knob-size: 14px;
+  --bar-height: 4px;
+}
+
+/** Modal Styling **/
+ion-modal {
+  --background: var(--ion-background-color);
+  --border-radius: 20px 20px 0 0;
+}
+
+/** FAB Button Styling **/
+ion-fab-button {
+  --background: var(--ion-color-warning);
+  --background-activated: var(--ion-color-warning-shade);
+  --color: var(--ion-color-dark);
+}
+
+/** Custom Utilities **/
+.text-brand {
+  color: var(--ion-color-warning) !important;
+}
+
+.bg-brand {
+  background: var(--ion-color-warning) !important;
+}
+
+.border-brand {
+  border-color: var(--ion-color-warning) !important;
+}
+
+/** Animations **/
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
