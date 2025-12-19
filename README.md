@@ -4,12 +4,6 @@
 ## 🎼 Nombre de la aplicación  
 Numelody
 
-Asignatura: Aplicaciones Distribuidas en Internet  
-Práctica: 4  
-
-## 👩‍💻 Autoras
-- Yamina Chibane — yc27@alu.ua.es   
-- Rahma Chibane — rc75@alu.ua.es 
 
 ## 📌 Descripción General
 Numelody es una aplicación web con apariencia de aplicación móvil desarrollada con Ionic + Vue 3 y TypeScript.  
